@@ -41,3 +41,13 @@ ENV/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Large model files and test data
+models/*
+!models/.gitkeep
+test/*
+!test/.gitkeep
+*.pkl
+*.pt
+*.pth
+*.svs
