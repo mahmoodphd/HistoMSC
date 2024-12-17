@@ -16,17 +16,16 @@ HistoMSC is a computational pipeline for analyzing tissue interactions in histop
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository with submodules:
 ```bash
-git clone https://github.com/yourusername/HistoMSC.git
+git clone --recursive https://github.com/yourusername/HistoMSC.git
 cd HistoMSC
 ```
 
-2. Download model files and test data:
-   - Download the required files from [Zenodo](https://doi.org/10.5281/zenodo.14510135)
+2. Download model files:
+   - Download the required model files from [Zenodo](https://doi.org/10.5281/zenodo.14510135)
    - Extract and place model files in their respective directories under `models/`
-   - Place test data files in the `test/` directory
-   - See README files in each directory for specific file placement instructions
+   - See README files in each model directory for specific file placement instructions
 
 3. Create and activate conda environment:
 ```bash
@@ -44,7 +43,7 @@ HistoMSC/
 │   ├── point/            # Point detection model
 │   ├── squeezenet/       # SqueezeNet model
 │   └── yolo/             # YOLO model
-├── morse_smale_src/       # MSC implementation
+├── morse_smale_src/       # Morse-Smale Complex implementation (submodule)
 └── test/                  # Test data and examples
     ├── *.json            # Example annotation files
     ├── *.csv             # Example results
@@ -79,16 +78,31 @@ python histo_msc.py --image path/to/image.svs --output path/to/output
 - `*_cp.json`: Critical points
 - `*_inf.csv`: Interface metrics
 
-## Pre-trained Models and Test Data
+## Test Data and Models
 
-The following files are hosted on Zenodo due to their large size:
-- Pre-trained models for point detection, SqueezeNet, and YOLO
-- Test Whole Slide Image (WSI) file
+### Pre-trained Models
+The following model files are hosted on Zenodo due to their size:
+- Point detection model (`models/point/export.pkl`)
+- SqueezeNet model (`models/squeezenet/SqueezeNetPanNuke-inpainted-blur0.001-192-off8.pth`)
+- YOLO model (`models/yolo/best.pt`)
 
-Download these files from:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
+Download these files from: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
 
-Example annotation files and results are included in the repository under the `test/` directory to help you verify your installation.
+### Test Data
+The `test/` directory contains:
+- Example WSI file (download from Zenodo)
+- Example annotation files and analysis results
+- See `test/README.md` for detailed information
+
+## Dependencies
+
+### Morse-Smale Complex Implementation
+The Morse-Smale Complex implementation is from the [morse_smale](https://github.com/uncommoncode/morse_smale) repository by uncommoncode. It is included as a Git submodule in the `morse_smale_src` directory.
+
+To update the submodule after cloning:
+```bash
+git submodule update --init --recursive
+```
 
 ## Citation
 

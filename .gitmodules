@@ -1,0 +1,3 @@
+[submodule "morse_smale_src"]
+	path = morse_smale_src
+	url = https://github.com/uncommoncode/morse_smale.git
