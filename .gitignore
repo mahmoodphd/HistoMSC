@@ -48,6 +48,7 @@ models/*
 !models/*/README.md
 test/*
 !test/.gitkeep
+!test/README.md
 *.pkl
 *.pt
 *.pth

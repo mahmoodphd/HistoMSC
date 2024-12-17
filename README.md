@@ -1,13 +1,8 @@
-
 ![HistoMSC](https://github.com/user-attachments/assets/52d786dd-9e8f-43b6-a900-5b843bac3b11)
 
-
-
-
-
-
-
 # HistoMSC: Morse-Smale Complex Analysis for Histopathology Images
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
 
 HistoMSC is a computational pipeline for analyzing tissue interactions in histopathology images using Morse-Smale Complex theory. This tool enables the identification and quantification of tissue interface patterns, particularly useful for studying tumor-stroma interactions in cancer research.
 
@@ -27,7 +22,13 @@ git clone https://github.com/yourusername/HistoMSC.git
 cd HistoMSC
 ```
 
-2. Create and activate conda environment:
+2. Download model files and test data:
+   - Download the required files from [Zenodo](https://doi.org/10.5281/zenodo.14510135)
+   - Extract and place model files in their respective directories under `models/`
+   - Place test data files in the `test/` directory
+   - See README files in each directory for specific file placement instructions
+
+3. Create and activate conda environment:
 ```bash
 conda env create -f environment.yml
 conda activate histomsc
@@ -39,12 +40,12 @@ conda activate histomsc
 HistoMSC/
 ├── config_msc.json         # Configuration file
 ├── histo_msc.py           # Main script
-├── models/                # Pre-trained models
-│   ├── point/
-│   ├── squeezenet/
-│   └── yolo/
+├── models/                # Pre-trained models (download from Zenodo)
+│   ├── point/            # Point detection model
+│   ├── squeezenet/       # SqueezeNet model
+│   └── yolo/             # YOLO model
 ├── morse_smale_src/       # MSC implementation
-└── test/                  # Test data and examples
+└── test/                  # Test data and examples (download from Zenodo)
 ```
 
 ## Usage
@@ -74,6 +75,16 @@ python histo_msc.py --image path/to/image.svs --output path/to/output
 - `*_cont.json`: Tissue contours
 - `*_cp.json`: Critical points
 - `*_inf.csv`: Interface metrics
+
+## Pre-trained Models and Test Data
+
+Due to their size, pre-trained models and test data are hosted on Zenodo. You can download them from:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
+
+The Zenodo repository includes:
+- Pre-trained models for point detection, SqueezeNet, and YOLO
+- Test WSI image and corresponding annotations
+- Example output files
 
 ## Citation
 
