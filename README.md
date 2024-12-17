@@ -45,7 +45,10 @@ HistoMSC/
 │   ├── squeezenet/       # SqueezeNet model
 │   └── yolo/             # YOLO model
 ├── morse_smale_src/       # MSC implementation
-└── test/                  # Test data and examples (download from Zenodo)
+└── test/                  # Test data and examples
+    ├── *.json            # Example annotation files
+    ├── *.csv             # Example results
+    └── *.svs             # Test WSI (download from Zenodo)
 ```
 
 ## Usage
@@ -78,13 +81,14 @@ python histo_msc.py --image path/to/image.svs --output path/to/output
 
 ## Pre-trained Models and Test Data
 
-Due to their size, pre-trained models and test data are hosted on Zenodo. You can download them from:
+The following files are hosted on Zenodo due to their large size:
+- Pre-trained models for point detection, SqueezeNet, and YOLO
+- Test Whole Slide Image (WSI) file
+
+Download these files from:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
 
-The Zenodo repository includes:
-- Pre-trained models for point detection, SqueezeNet, and YOLO
-- Test WSI image and corresponding annotations
-- Example output files
+Example annotation files and results are included in the repository under the `test/` directory to help you verify your installation.
 
 ## Citation
 

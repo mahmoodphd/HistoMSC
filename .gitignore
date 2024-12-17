@@ -42,13 +42,10 @@ ENV/
 ehthumbs.db
 Thumbs.db
 
-# Large model files and test data
+# Large model files and WSI
 models/*
 !models/.gitkeep
 !models/*/README.md
-test/*
-!test/.gitkeep
-!test/README.md
 *.pkl
 *.pt
 *.pth
