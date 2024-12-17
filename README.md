@@ -1,3 +1,12 @@
+
+![HistoMSC](https://github.com/user-attachments/assets/52d786dd-9e8f-43b6-a900-5b843bac3b11)
+
+
+
+
+
+
+
 # HistoMSC: Morse-Smale Complex Analysis for Histopathology Images
 
 HistoMSC is a computational pipeline for analyzing tissue interactions in histopathology images using Morse-Smale Complex theory. This tool enables the identification and quantification of tissue interface patterns, particularly useful for studying tumor-stroma interactions in cancer research.
