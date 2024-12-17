@@ -2,7 +2,9 @@
 
 # HistoMSC: Morse-Smale Complex Analysis for Histopathology Images
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510390.svg)](https://doi.org/10.5281/zenodo.14510390)
+
 
 HistoMSC is a computational pipeline for analyzing tissue interactions in histopathology images using Morse-Smale Complex theory. This tool enables the identification and quantification of tissue interface patterns, particularly useful for studying tumor-stroma interactions in cancer research.
 
@@ -23,7 +25,7 @@ cd HistoMSC
 ```
 
 2. Download model files:
-   - Download the required model files from [Zenodo](https://doi.org/10.5281/zenodo.14510135)
+   - Download the required model files from [Zenodo](https://doi.org/10.5281/zenodo.14510390)
    - Extract and place model files in their respective directories under `models/`
    - See README files in each model directory for specific file placement instructions
 
@@ -86,7 +88,7 @@ The following model files are hosted on Zenodo due to their size:
 - SqueezeNet model (`models/squeezenet/SqueezeNetPanNuke-inpainted-blur0.001-192-off8.pth`)
 - YOLO model (`models/yolo/best.pt`)
 
-Download these files from: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510135.svg)](https://doi.org/10.5281/zenodo.14510135)
+Download these files from: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14510390.svg)](https://doi.org/10.5281/zenodo.14510390)
 
 ### Test Data
 The `test/` directory contains:
