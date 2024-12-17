@@ -45,6 +45,7 @@ Thumbs.db
 # Large model files and test data
 models/*
 !models/.gitkeep
+!models/*/README.md
 test/*
 !test/.gitkeep
 *.pkl
