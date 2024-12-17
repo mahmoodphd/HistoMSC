@@ -105,7 +105,15 @@ To update the submodule after cloning:
 ```bash
 git submodule update --init --recursive
 ```
+## Demonstration Video
+[![HistoMSC Demo](https://img.youtube.com/vi/KkOd9mL6X2E/0.jpg)](https://www.youtube.com/watch?v=KkOd9mL6X2E)
 
+Watch our [demonstration video](https://youtu.be/KkOd9mL6X2E) to see HistoMSC in action! The video showcases:
+- AI-based WSI processing and analysis
+- Visual annotations and tissue classification
+- Morse-Smale Complex analysis of tissue interfaces
+- Interface pattern quantification and metrics
+- QuPath integration and result visualization
 ## Citation
 
 If you use this tool in your research, please cite:
