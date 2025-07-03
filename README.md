@@ -117,7 +117,19 @@ Watch our [demonstration video](https://youtu.be/KkOd9mL6X2E) to see HistoMSC in
 ## Citation
 
 If you use this tool in your research, please cite:
-[Add citation information]
+@article{AHMAD2025109991,
+title = {HistoMSC: Density and topology analysis for AI-based visual annotation of histopathology whole slide images},
+journal = {Computers in Biology and Medicine},
+volume = {190},
+pages = {109991},
+year = {2025},
+issn = {0010-4825},
+doi = {https://doi.org/10.1016/j.compbiomed.2025.109991},
+url = {https://www.sciencedirect.com/science/article/pii/S0010482525003427},
+author = {Zahoor Ahmad and Khaled Al-Thelaya and Mahmood Alzubaidi and Faaiz Joad and Nauman Ullah Gilal and William Mifsud and Sabri Boughorbel and Giovanni Pintore and Enrico Gobbetti and Jens Schneider and Marco Agus},
+keywords = {Histopathology, AI-based annotation, Nuclei localization, Kernel density estimation, Morse–Smale complex},
+abstract = {We introduce an end-to-end framework for the automated visual annotation of histopathology whole slide images. Our method integrates deep learning models to achieve precise localization and classification of cell nuclei with spatial data aggregation to extend classes of sparsely distributed nuclei across the entire slide. We introduce a novel and cost-effective approach to localization, leveraging a U-Net architecture and a ResNet-50 backbone. The performance is boosted through color normalization techniques, helping achieve robustness under color variations resulting from diverse scanners and staining reagents. The framework is complemented by a YOLO detection architecture, augmented with generative methods. For classification, we use context patches around each nucleus, fed to various deep architectures. Sparse nuclei-level annotations are then aggregated using kernel density estimation, followed by color-coding and isocontouring. This reduces visual clutter and provides per-pixel probabilities with respect to pathology taxonomies. Finally, we use Morse–Smale theory to generate abstract annotations, highlighting extrema in the density functions and potential spatial interactions in the form of abstract graphs. Thus, our visualization allows for exploration at scales ranging from individual nuclei to the macro-scale. We tested the effectiveness of our framework in an assessment by six pathologists using various neoplastic cases. Our results demonstrate the robustness and usefulness of the proposed framework in aiding histopathologists in their analysis and interpretation of whole slide images.}
+}
 
 ## License
 
